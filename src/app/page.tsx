@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { clash, clashLight, satoshi, satoshiReg } from "./layout";
-
+import { VscArrowDown } from "react-icons/vsc";
+import { BsArrowUpRight } from "react-icons/bs";
 export default function Home() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-start overflow-hidden">
@@ -42,8 +43,8 @@ export default function Home() {
           <div className="flex w-1/3 h-full relative text-4xl text-black py-20 px-5 after:absolute after:h-[94%] after:w-px after:bg-black/40 after:origin-center after:top-1/2 after:-translate-y-1/2 after:right-0">
             <p className={`${satoshiReg.className}`}>Who We Are</p>
           </div>
-          <div className="flex flex-col py-10 px-7 text-4xl w-full relative">
-            <span className="flex h-fit w-full pb-7 relative after:absolute after:w-full after:h-px after:bg-black/40 after:origin-center after:left-1/2 after:-translate-x-1/2 after:bottom-0 ">
+          <div className="flex flex-col py-10 px-7 text-5xl w-full relative">
+            <span className={`flex h-fit w-full pb-7 relative after:absolute after:w-full after:h-px after:bg-black/40 after:origin-center after:left-1/2 after:-translate-x-1/2 after:bottom-0 ${clash.className}`}>
               We are a multidisciplinary team of designers and <br />
               developers passionate about building products that <br />
               people love. From strategy to execution, we create <br />
@@ -74,9 +75,71 @@ export default function Home() {
         </div>
         <div className="w-full py-2 relative px-5 items-center after:absolute after:w-[97%] after:h-px after:bg-black/40 after:origin-center after:left-1/2 after:-translate-x-1/2 after:top-0">
           <span className="text-black text-4xl uppercase">
-            <p className={`${satoshiReg.className}`}>our works</p>
+            <span className="flex flex-row gap-2">
+              <p className={`${satoshiReg.className}`}>our works</p>
+              <VscArrowDown/>
+            </span>
             <p className="text-2xl">2025</p>
           </span>
+        </div>
+      </div>
+      <div className="w-full h-screen flex bg-white items-center justify-center text-black relative">
+        <p className={`absolute top-15 text-3xl`}>We craft digital products that inspire, engage, and deliver results.</p>
+        <div className="w-full grid grid-cols-4 grid-rows-2 gap-5 m-auto items-center z-2">
+          <div className="flex flex-col items-center">
+            <div className="flex w-[300px] h-[370px] flex-col">
+              <div className="flex w-full h-[350px] overflow-hidden">
+                <img alt="" src="project1.png" className="object-cover"/>
+              </div>
+              <div className="flex flex-row justify-between items-center">
+                <p className="text-xl">NexaPay</p>
+                <BsArrowUpRight/>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div className="flex flex-col items-center">
+            <div className="flex w-[300px] h-[370px] flex-col">
+              <div className="flex w-full h-[350px] overflow-hidden">
+                <img alt="" src="project3.png" className="object-cover"/>
+              </div>
+              <div className="flex flex-row justify-between items-center">
+                <p className="text-xl">Floria</p>
+                <BsArrowUpRight/>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center justify-center">
+            <a className="flex py-1 px-2 text-center bg-black text-white text-3xl hover:bg-white hover:text-black hover:underline" href="">See More Work</a>
+          </div>
+          <div></div>
+          <div className="flex flex-col items-center">
+            <div className="flex w-[300px] h-[370px] flex-col">
+              <div className="flex w-full h-[350px] overflow-hidden">
+                <img alt="" src="project2.png" className="object-cover"/>
+              </div>
+              <div className="flex flex-row justify-between items-center">
+                <p className="text-xl">Loomio</p>
+                <BsArrowUpRight/>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div className="flex flex-col items-center">
+            <div className="flex w-[300px] h-[370px] flex-col">
+              <div className="flex w-full h-[350px] overflow-hidden">
+                <img alt="" src="project4.png" className="object-cover"/>
+              </div>
+              <div className="flex flex-row justify-between items-center">
+                <p className="text-xl">CineWave</p>
+                <BsArrowUpRight/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 left-0 px-5 mb-10 flex flex-col w-full leading-65 z-1 text-black/40 font-black">
+          <h2 className="uppercase text-[15vw]">DEVORA</h2>
+          <h2 className="uppercase text-[15vw] text-end">Systems</h2>
         </div>
       </div>
     </div>
