@@ -2,7 +2,7 @@ import { clash, satoshi } from "./layout";
 
 export default function Header() {
     return(
-        <div className="fixed w-full top-0 z-15 mt-6 px-6 mix-blend-difference">
+        <div className="fixed w-full top-0 z-15 mt-5 px-5 mix-blend-difference">
             <div className={`w-full flex flex-row rounded-full justify-between ${satoshi.className}`}>
                     <a className="text-2xl text-black py-1 px-2 bg-white" href="">
                         DEVORA
