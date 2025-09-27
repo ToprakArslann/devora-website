@@ -1,6 +1,6 @@
 import "./globals.css";
-import Header from "./header";
 import localFont from 'next/font/local'
+import Header from "./header";
 
 export const clash = localFont({
   src: [
@@ -24,6 +24,15 @@ export const satoshi = localFont({
   src: [
     {
       path: '/fonts/Satoshi-Light.otf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+})
+export const satoshiReg = localFont({
+  src: [
+    {
+      path: '/fonts/Satoshi-Regular.otf',
       weight: '400',
       style: 'normal',
     },
