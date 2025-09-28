@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { clash, clashLight, satoshi, satoshiBlack, satoshiReg } from "./layout";
+import { clash, clashLight, satoshi, satoshiBlack, satoshiReg } from "./fonts";
 import { VscArrowDown } from "react-icons/vsc";
 import { BsArrowUpRight } from "react-icons/bs";
 import { IoMdStar } from "react-icons/io";

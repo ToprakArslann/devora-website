@@ -1,4 +1,4 @@
-import { clash, satoshi } from "./layout";
+import { clash, satoshi } from "./fonts";
 
 export default function Header() {
     return(
