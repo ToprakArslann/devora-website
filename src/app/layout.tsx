@@ -1,6 +1,7 @@
 import "./globals.css";
 import localFont from 'next/font/local'
 import Header from "./header";
+import Footer from "./footer";
 
 export const clash = localFont({
   src: [
@@ -38,6 +39,15 @@ export const satoshiReg = localFont({
     },
   ],
 })
+export const satoshiBlack = localFont({
+  src: [
+    {
+      path: '/fonts/Satoshi-Black.otf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+})
 
 export default function RootLayout({
   children,
@@ -55,6 +65,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );
