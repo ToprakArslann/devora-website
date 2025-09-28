@@ -170,7 +170,7 @@ export default function Home() {
                 </div>
                 <BsArrowUpRight size={25} className="text-white/40"/>
               </div>
-              <div className="text-4xl text-white py-10 h-full w-full flex">"World-class design and execution. Truly exceeded expectations."</div>
+              <div className="text-4xl text-white py-10 h-full w-full flex">World-class design and execution. Truly exceeded expectations.</div>
               <div className="text-2xl text-white w-full flex"> — Michael B., CEO @ Floria</div>
             </div>
             <div className="flex flex-col text-black w-120 max-h-[600px] min-h-[500px] items-center px-5 py-5 border-x-1 border-[#666666]/60 border-b-1">
@@ -189,7 +189,7 @@ export default function Home() {
                 </div>
                 <BsArrowUpRight size={25} className="text-white/40"/>
               </div>
-              <div className="text-4xl text-white py-10 h-full w-full flex">“From concept to launch, the team felt like an extension of our own. Beautiful design, flawless execution.”</div>
+              <div className="text-4xl text-white py-10 h-full w-full flex">From concept to launch, the team felt like an extension of our own. Beautiful design, flawless execution.</div>
               <div className="text-2xl text-white w-full flex"> — Sofia M., Creative Director @ CineWave</div>
             </div>
             <div className="flex flex-col text-black w-120 max-h-[600px] min-h-[500px] items-center px-5 py-5 border-x-1 border-[#666666]/60 border-b-1">
@@ -208,7 +208,7 @@ export default function Home() {
                 </div>
                 <BsArrowUpRight size={25} className="text-white/40"/>
               </div>
-              <div className="text-4xl text-white py-10 h-full w-full flex">“Working with Devora was like unlocking a cheat code. They transformed our idea into a live product in record time.”</div>
+              <div className="text-4xl text-white py-10 h-full w-full flex">Working with Devora was like unlocking a cheat code. They transformed our idea into a live product in record time.</div>
               <div className="text-2xl text-white w-full flex">— Daniel K., CEO @ Loomio</div>
             </div>
             <div className="flex flex-col text-black w-120 max-h-[600px] min-h-[500px] items-center px-5 py-5 border-x-1 border-[#666666]/60 border-b-1">
@@ -227,7 +227,7 @@ export default function Home() {
                 </div>
                 <BsArrowUpRight size={25} className="text-white/40"/>
               </div>
-              <div className="text-4xl text-white py-10 h-full w-full flex">“They don’t just build products, they craft digital experiences. Truly world-class.”</div>
+              <div className="text-4xl text-white py-10 h-full w-full flex">They don’t just build products, they craft digital experiences. Truly world-class.</div>
               <div className="text-2xl text-white w-full flex">— John R., Product Manager @ NexaPay</div>
             </div>
             <div className="flex flex-col text-black w-120 max-h-[600px] min-h-[500px] items-center px-5 py-5 border-x-1 border-[#666666]/60 border-b-1">
@@ -246,7 +246,7 @@ export default function Home() {
                 </div>
                 <BsArrowUpRight size={25} className="text-white/40"/>
               </div>
-              <div className="text-4xl text-white py-10 h-full w-full flex">"World-class design and execution. Truly exceeded expectations."</div>
+              <div className="text-4xl text-white py-10 h-full w-full flex">World-class design and execution. Truly exceeded expectations.</div>
               <div className="text-2xl text-white w-full flex"> — Michael B., CEO @ Floria</div>
             </div>
             <div className="flex flex-col text-black w-120 max-h-[600px] min-h-[500px] items-center px-5 py-5 border-x-1 border-[#666666]/60 border-b-1">
@@ -265,7 +265,7 @@ export default function Home() {
                 </div>
                 <BsArrowUpRight size={25} className="text-white/40"/>
               </div>
-              <div className="text-4xl text-white py-10 h-full w-full flex">“From concept to launch, the team felt like an extension of our own. Beautiful design, flawless execution.”</div>
+              <div className="text-4xl text-white py-10 h-full w-full flex">From concept to launch, the team felt like an extension of our own. Beautiful design, flawless execution.</div>
               <div className="text-2xl text-white w-full flex"> — Sofia M., Creative Director @ CineWave</div>
             </div>
             <div className="flex flex-col text-black w-120 max-h-[600px] min-h-[500px] items-center px-5 py-5 border-x-1 border-[#666666]/60 border-b-1">
@@ -284,7 +284,7 @@ export default function Home() {
                 </div>
                 <BsArrowUpRight size={25} className="text-white/40"/>
               </div>
-              <div className="text-4xl text-white py-10 h-full w-full flex">“Working with Devora was like unlocking a cheat code. They transformed our idea into a live product in record time.”</div>
+              <div className="text-4xl text-white py-10 h-full w-full flex">Working with Devora was like unlocking a cheat code. They transformed our idea into a live product in record time.</div>
               <div className="text-2xl text-white w-full flex">— Daniel K., CEO @ Loomio</div>
             </div>
             <div className="flex flex-col text-black w-120 max-h-[600px] min-h-[500px] items-center px-5 py-5 border-x-1 border-[#666666]/60 border-b-1">
@@ -303,7 +303,7 @@ export default function Home() {
                 </div>
                 <BsArrowUpRight size={25} className="text-white/40"/>
               </div>
-              <div className="text-4xl text-white py-10 h-full w-full flex">“They don’t just build products, they craft digital experiences. Truly world-class.”</div>
+              <div className="text-4xl text-white py-10 h-full w-full flex">They don’t just build products, they craft digital experiences. Truly world-class.</div>
               <div className="text-2xl text-white w-full flex">— John R., Product Manager @ NexaPay</div>
             </div>
           </div>
