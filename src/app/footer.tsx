@@ -1,6 +1,6 @@
 export default function Footer() {
     return(
-        <div className="flex flex-row w-full relative px-5 overflow-hidden justify-between">
+        <div className="flex flex-row w-full relative px-5 overflow-hidden justify-between bg-[#090909]">
             <div className="flex flex-col relative pb-15">
                 <span>
                     <h2 className="text-9xl font-black uppercase">Devora</h2>

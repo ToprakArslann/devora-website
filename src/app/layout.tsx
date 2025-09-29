@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`flex h-full w-full flex-col antialiased ${clash.className} ${satoshi.className}`}
+        className={`flex h-full w-full flex-col antialiased ${clash.className} ${satoshi.className} text-white`}
         >
         <Header/>
         <main>

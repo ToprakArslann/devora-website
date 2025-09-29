@@ -3,24 +3,25 @@ import { clash, clashLight, satoshi, satoshiBlack, satoshiReg } from "./fonts";
 import { VscArrowDown } from "react-icons/vsc";
 import { BsArrowUpRight } from "react-icons/bs";
 import { IoMdStar } from "react-icons/io";
+import Beams from "@/components/Beams";
 export default function Home() {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-start overflow-hidden">
-      <div className="w-full h-screen flex flex-col justify-between px-30 pt-45 pb-30 z-10">
+    <div className="w-full min-h-screen flex flex-col items-center justify-start overflow-hidden ">
+      <div className="w-full h-screen flex flex-col justify-between px-30 pt-45 pb-30 z-10 text-white">
         <div className=" flex flex-row w-full justify-between">
           <div className="flex flex-col text-5xl gap-5">
           Creative digital solutions <br/> for your brand
           <div className="flex flex-row relative">
-            <div className="w-12 rounded-full aspect-square overflow-hidden border-2 border-[#1E1E1E] absolute">
+            <div className="w-12 rounded-full aspect-square overflow-hidden border-2 border-[#090909] absolute">
               <img  alt="" src="avatar1.png"/>
             </div>
-            <div className="w-12 rounded-full aspect-square overflow-hidden border-2 border-[#1E1E1E] absolute left-8">
+            <div className="w-12 rounded-full aspect-square overflow-hidden border-2 border-[#090909] absolute left-8">
               <img  alt="" src="avatar2.png"/>
             </div>
-            <div className="w-12 rounded-full aspect-square overflow-hidden border-2 border-[#1E1E1E] absolute left-16">
+            <div className="w-12 rounded-full aspect-square overflow-hidden border-2 border-[#090909] absolute left-16">
               <img  alt="" src="avatar3.png"/>
             </div>
-            <div className="w-12 rounded-full aspect-square overflow-hidden border-2 border-[#1E1E1E] absolute left-24">
+            <div className="w-12 rounded-full aspect-square overflow-hidden border-2 border-[#090909] absolute left-24">
               <img  alt="" src="avatar4.png"/>
             </div>
           </div>
@@ -37,7 +38,17 @@ export default function Home() {
             <a href="" className={`text-3xl ${satoshi.className} bg-white text-black py-1 px-2`}>View Our Work</a>
           </div>
         </div>
-        <video src="main2.mp4" loop autoPlay muted className="flex absolute -z-5 inset-0 w-full h-screen object-cover"></video>
+        <div className="flex absolute -z-5 inset-0 w-full h-screen">
+          <Beams
+            beamWidth={2}
+            beamHeight={30}
+            beamNumber={20}
+            speed={2}
+            noiseIntensity={1.75}
+            scale={0.2}
+            rotation={30}
+          />
+        </div>
       </div>
       <div className="w-full h-screen flex flex-col bg-white text-black">
         <div className="flex flex-row w-full h-full ">
@@ -143,7 +154,7 @@ export default function Home() {
           <h2 className="uppercase text-[15vw] text-end">Systems</h2>
         </div>
       </div>
-      <div className={`flex flex-col w-full h-screen relative ${satoshi.className}`}>
+      <section className={`flex flex-col w-full h-screen relative ${satoshi.className} bg-[#090909]`}>
         <Image width={180} height={0} alt="" className="absolute top-10 right-10" src="shape2.svg"/>
         <Image width={85} height={0} className="absolute top-10 left-10" alt="" src="quotes.svg"/>
         <div className="flex w-full px-50 py-30 flex-col h-fit">
@@ -308,8 +319,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex items-center justify-center w-full h-screen p-10">
+      </section>
+      <div className="flex items-center justify-center w-full h-screen p-10 bg-[#090909]">
         <div className="flex w-full h-full flex-col relative items-center justify-center">
           <h2 className={`uppercase z-2 text-[11vw] pt-5 mix-blend-overlay ${satoshiBlack.className}`}>get in touch</h2>
           <div className="flex w-full h-full px-37 z-2 items-center justify-center pb-20">
