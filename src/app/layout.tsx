@@ -1,6 +1,6 @@
 import "./globals.css";
-import Header from "./header";
-import Footer from "./footer";
+import Header from "./components/header";
+import Footer from "./components/footer";
 import { clash, satoshi } from './fonts';
 
 export default function RootLayout({
@@ -9,17 +9,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-
   return (
     <html lang="en">
       <body
         className={`flex h-full w-full flex-col antialiased ${clash.className} ${satoshi.className} text-white`}
-        >
-        <Header/>
+      >
+        <Header />
         <main>
           {children}
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

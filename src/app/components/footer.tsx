@@ -1,3 +1,5 @@
+"use client"
+import scrollToSection from "../hooks/scrollToSection"
 export default function Footer() {
     return(
         <div className="flex flex-row w-full relative px-5 overflow-hidden justify-between bg-[#090909]">
@@ -8,19 +10,16 @@ export default function Footer() {
                 </span>
                 <ul className="ml-6 text-2xl">
                     <li className="list-disc">
-                        <a href="" className="hover:underline">About</a>
+                        <button onClick={() => scrollToSection("about")} className="hover:underline hover:cursor-pointer">About</button>
                     </li>
                     <li className="list-disc">
-                        <a href="" className="hover:underline">Services</a>
+                        <button onClick={() => scrollToSection("cases")} className="hover:underline hover:cursor-pointer">Our Work / Cases</button>
                     </li>
                     <li className="list-disc">
-                        <a href="" className="hover:underline">Our Work / Cases</a>
+                        <button onClick={() => scrollToSection("references")} className="hover:underline hover:cursor-pointer">Testimonials</button>
                     </li>
                     <li className="list-disc">
-                        <a href="" className="hover:underline">Testimonials</a>
-                    </li>
-                    <li className="list-disc">
-                        <a href="" className="hover:underline">Contact</a>
+                        <button onClick={() => scrollToSection("contact")} className="hover:underline hover:cursor-pointer">Contact</button>
                     </li>
                 </ul>
             </div>
