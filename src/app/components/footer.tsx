@@ -30,7 +30,7 @@ export default function Footer() {
                     <button type="submit" className="bg-black py-1 px-2 text-xl hover:bg-white hover:underline hover:text-black">Signup</button>
                 </form>
             </div>
-            <span className="text-xl text-white/40 flex flex-row absolute bottom-2 w-full left-1/2 -translate-x-1/2 px-5 items-center justify-between">
+            <span className="text-white/40 flex flex-row absolute bottom-2 w-full left-1/2 -translate-x-1/2 px-5 items-center justify-between">
                 <p>hello@devora.com +1 (555) 123-4567</p>
                 <p>San Francisco, CA</p>
             </span>

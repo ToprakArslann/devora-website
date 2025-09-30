@@ -6,8 +6,7 @@ import Testimonial from "./components/testimonial";
 import Contact from "./components/contact";
 
 
-export default function Home() {
-
+export default async function Home() {
   return (
       <Lenis>
         <div className="w-full min-h-screen flex flex-col items-center justify-start overflow-hidden ">

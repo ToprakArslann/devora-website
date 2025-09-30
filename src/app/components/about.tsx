@@ -1,9 +1,20 @@
+"use client";
+import { useRef } from "react";
 import { clash, clashLight, satoshi, satoshiBlack, satoshiReg } from "../fonts";
 import { VscArrowDown } from "react-icons/vsc";
+import { useTransform, useScroll, motion } from "motion/react";
 
 export default function About() {
+    const container = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: container,
+        offset: ["start end", "end start"]
+    })
+
+    const worksX = useTransform(scrollYProgress, [0.5,0.7], [0, 80])
+
     return (
-        <section id="about" className="w-full h-screen flex flex-col bg-white text-black">
+        <section id="about" ref={container} className="w-full h-screen flex flex-col bg-white text-black">
             <div className="flex flex-row w-full h-full ">
                 <div className="flex w-1/3 h-full relative text-4xl text-black py-20 px-5 after:absolute after:h-[94%] after:w-px after:bg-black/40 after:origin-center after:top-1/2 after:-translate-y-1/2 after:right-0">
                     <p className={`${satoshiReg.className}`}>Who We Are</p>
@@ -40,9 +51,12 @@ export default function About() {
             </div>
             <div className="w-full py-2 relative px-5 items-center after:absolute after:w-[97%] after:h-px after:bg-black/40 after:origin-center after:left-1/2 after:-translate-x-1/2 after:top-0">
                 <span className="text-black text-4xl uppercase">
-                    <span className="flex flex-row gap-2">
-                        <p className={`${satoshiReg.className}`}>our works</p>
-                        <VscArrowDown />
+                    <span className={`flex flex-row gap-2 ${satoshiReg.className}`}>
+                        <p className={`${satoshiReg.className}`}>our</p>
+                        <motion.div style={{x: worksX}} className="flex flex-row">
+                            <p>works</p>
+                            <VscArrowDown />
+                        </motion.div>
                     </span>
                     <p className="text-2xl">2025</p>
                 </span>
