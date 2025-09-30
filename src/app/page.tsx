@@ -6,10 +6,10 @@ import Testimonial from "./components/testimonial";
 import Contact from "./components/contact";
 
 
-export default async function Home() {
+export default function Home() {
   return (
       <Lenis>
-        <div className="w-full min-h-screen flex flex-col items-center justify-start overflow-hidden ">
+        <div className="w-full min-h-screen flex flex-col items-center justify-start overflow-hidden relative">
           <Hero />
           <About/>
           <Cases/>
