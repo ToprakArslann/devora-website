@@ -9,7 +9,7 @@ import Contact from "./components/contact";
 export default function Home() {
   return (
       <Lenis>
-        <div className="w-full min-h-screen flex flex-col items-center justify-start overflow-hidden relative">
+        <div className="w-full min-h-screen flex flex-col items-center justify-start overflow-hidden relative bg-black">
           <Hero />
           <About/>
           <Cases/>

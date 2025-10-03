@@ -20,10 +20,10 @@ export default function About() {
                     <p className={`${satoshiReg.className}`}>Who We Are</p>
                 </div>
                 <div className="flex flex-col py-10 px-7 w-full h-full relative">
-                    <span className={`flex h-fit  w-full min-lg:text-[2.5vw]/12 text-[3.5vw]/8 pb-7 relative after:absolute after:w-full after:h-px after:bg-black/40 after:origin-center after:left-1/2 after:-translate-x-1/2 after:bottom-0 ${clash.className}`}>
-                        We are a multidisciplinary team of designers and <br />
-                        developers passionate about building products that <br />
-                        people love. From strategy to execution, we create <br />
+                    <span className={`flex h-fit  w-full min-lg:text-[2.5vw]/12 text-xl pb-7 relative after:absolute after:w-full after:h-px after:bg-black/40 after:origin-center after:left-1/2 after:-translate-x-1/2 after:bottom-0 ${clash.className}`}>
+                        We are a multidisciplinary team of designers and <br className="max-lg:hidden"/>
+                        developers passionate about building products that <br className="max-lg:hidden"/>
+                        people love. From strategy to execution, we create <br className="max-lg:hidden"/>
                         seamless digital experiences tailored to your goals.
                     </span>
                     <div className="flex flex-row w-full min-lg:text-[2vw] text-[5vw] items-center justify-between  relative after:absolute after:w-full after:h-px after:bg-black/40 after:origin-center after:left-1/2 after:-translate-x-1/2 after:bottom-0">

@@ -7,9 +7,9 @@ import { easeIn, easeInOut, easeOut, motion } from "motion/react"
 
 export default function Hero() {
     return (
-        <section className="w-full h-screen flex flex-col justify-between px-30 pt-45 pb-30 z-10 text-white">
-            <div className=" flex flex-row w-full justify-between">
-                <div className="flex flex-col text-5xl gap-5">
+        <section className="w-full h-screen flex flex-col justify-between min-[1025]:px-30 px-10 pt-45 pb-30 z-10 text-white">
+            <div className=" flex min-lg:flex-row flex-col w-full justify-between gap-20">
+                <div className="flex flex-col min-md:text-4xl text-[7vw] gap-5">
                     <motion.p initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ ease: easeInOut,duration: 1 }}>
                        Creative digital solutions <br /> for your brand
                     </motion.p>
@@ -30,19 +30,19 @@ export default function Hero() {
                 </div>
                 <div className={`text-xl ${clashLight.className} flex flex-col relative`}>
                     <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{ease: easeInOut, duration:1, delay:0.6}}> 
-                        Remote-first team delivering stunning <br /> design and scalable technology.
+                        Remote-first team delivering stunning <br className="max-sm:hidden"/> design and scalable technology.
                     </motion.p>
                     <motion.div className="absolute right-0 top-40" initial={{scale:0.6,rotate:40, opacity:0}} animate={{scale:1,rotate:0, opacity:1}} transition={{ease: easeInOut, duration:1, delay:0.8}} whileHover={{rotate:20, transition: { duration: 1 }}}>
-                        <Image width={150} height={0} src="star.svg" alt="" />
+                        <Image width={100} height={0} src="star.svg" className="max-md:hidden" alt="" />
                     </motion.div>
                 </div>
             </div>
             <div className="flex flex-row w-full justify-between">
                     <motion.div initial={{scale:0.6,rotate:180, opacity:0}} animate={{scale:1,rotate:360, opacity:1}} transition={{ease: easeInOut, duration:1, delay:0.8, rotate:{repeat: Infinity, duration: 5, ease: "linear"}}}>
-                        <Image src="shape1.svg" width={170} height={0} alt="" />
+                        <Image src="shape1.svg" width={window.innerWidth >= 1024 ? 170 : 80} height={0} alt="" />
                     </motion.div>
-                <div className="flex items-center px-35">
-                    <button onClick={() => scrollToSection("cases")} className={`text-3xl ${satoshi.className} bg-white text-black py-1 px-2 hover:bg-black hover:text-white hover:underline`}>View Our Work</button>
+                <div className="flex items-center min-lg:px-35">
+                    <button onClick={() => scrollToSection("cases")} className={`min-lg:text-3xl flex flex-shrink-0 text-xl ${satoshi.className} bg-white text-black py-1 px-2 hover:bg-black hover:text-white hover:underline`}>View Our Work</button>
                 </div>
             </div>
             <div className="flex absolute -z-5 inset-0 w-full h-screen">
