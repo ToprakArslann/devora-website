@@ -4,8 +4,16 @@ import Beams from "@/app/components/Beams";
 import { clash, clashLight, satoshi, satoshiBlack, satoshiReg } from "../fonts";
 import Image from "next/image";
 import { easeIn, easeInOut, easeOut, motion } from "motion/react"
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+    const [imgWidth, setImgWidth] = useState(80);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setImgWidth(window.innerWidth >= 1024 ? 170 : 80);
+        }
+    }, []);
     return (
         <section className="w-full h-screen flex flex-col justify-between min-[1025]:px-30 px-10 pt-45 pb-30 z-10 text-white">
             <div className=" flex min-lg:flex-row flex-col w-full justify-between gap-20">
@@ -39,7 +47,7 @@ export default function Hero() {
             </div>
             <div className="flex flex-row w-full justify-between">
                     <motion.div initial={{scale:0.6,rotate:180, opacity:0}} animate={{scale:1,rotate:360, opacity:1}} transition={{ease: easeInOut, duration:1, delay:0.8, rotate:{repeat: Infinity, duration: 5, ease: "linear"}}}>
-                        <Image src="shape1.svg" width={window.innerWidth >= 1024 ? 170 : 80} height={0} alt="" />
+                        <Image src="shape1.svg" width={imgWidth} height={0} alt="" />
                     </motion.div>
                 <div className="flex items-center min-lg:px-35">
                     <button onClick={() => scrollToSection("cases")} className={`min-lg:text-3xl flex flex-shrink-0 text-xl ${satoshi.className} bg-white text-black py-1 px-2 hover:bg-black hover:text-white hover:underline`}>View Our Work</button>
