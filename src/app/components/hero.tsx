@@ -15,9 +15,9 @@ export default function Hero() {
         }
     }, []);
     return (
-        <section className="w-full h-screen flex flex-col justify-between min-[1025]:px-30 px-10 pt-45 pb-30 z-10 text-white">
+        <section className="w-full h-screen flex flex-col justify-between min-[1025]:px-30 px-10 min-lg:pt-45 pt-30 pb-30 z-10 text-white">
             <div className=" flex min-lg:flex-row flex-col w-full justify-between gap-20">
-                <div className="flex flex-col min-md:text-4xl text-[7vw] gap-5">
+                <div className="flex flex-col min-sm:text-4xl text-[7vw] gap-5">
                     <motion.p initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ ease: easeInOut,duration: 1 }}>
                        Creative digital solutions <br /> for your brand
                     </motion.p>
